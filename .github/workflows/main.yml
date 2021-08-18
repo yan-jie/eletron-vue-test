@@ -41,6 +41,8 @@ jobs:
         if: matrix.os == 'macos-10.15'
         run: |
           npm run build
+        env:
+          GH_TOKEN: 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
 
       # step5: cleanup artifacts in dist_electron
       # - name: cleanup artifacts
@@ -61,4 +63,4 @@ jobs:
         with:
           files: "build/*.dmg"
         env:
-          GH_TOKEN: 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
+          GH_TOKEN: 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
