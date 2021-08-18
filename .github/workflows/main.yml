@@ -42,7 +42,7 @@ jobs:
         run: |
           npm run build
         env:
-          GH_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # step5: cleanup artifacts in dist_electron
       # - name: cleanup artifacts
@@ -63,4 +63,4 @@ jobs:
         with:
           files: "build/*.dmg"
         env:
-          GH_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
